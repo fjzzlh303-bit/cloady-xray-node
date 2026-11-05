@@ -75,7 +75,7 @@ h1 { font-weight: 300; letter-spacing: .06em; font-size: 26px; margin: 8px 0 4px
 <body>
 <div class="wrap">
 <h1>剩余流量</h1>
-<p class="sub">Cloady 节点 · xray-node · US West USW1 · 备用线路</p>
+<p class="sub">Cloady 节点 · xray-node · US West USW1</p>
 <div class="card">
 <div class="big">$REMAIN_GB <small>GB 剩余</small></div>
 <div class="bar"><i style="width: $PCT%"></i></div>
