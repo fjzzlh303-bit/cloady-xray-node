@@ -10,6 +10,7 @@ FROM alpine:3.21
 RUN apk add --no-cache ca-certificates
 COPY --from=xray /usr/local/bin/xray /usr/local/bin/xray
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
-EXPOSE 3000
+COPY meter.sh /meter.sh
+RUN chmod +x /entrypoint.sh /meter.sh
+EXPOSE 3000 8080
 ENTRYPOINT ["/entrypoint.sh"]
